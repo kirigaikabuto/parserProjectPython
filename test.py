@@ -2,11 +2,13 @@ from bs4 import BeautifulSoup
 import requests
 import json
 import pandas as pd
+import datetime
 
+dateStr = str(datetime.datetime.now()).replace(" ", "_").split(".")[0].replace(":", "_").replace("-", "_")
 
 folderName = "./sanctions"
-fileNameJson = "data.json"
-fileNameXlsx = "data.xlsx"
+fileNameJson = "data" + dateStr + ".json"
+fileNameXlsx = "data" + dateStr + ".xlsx"
 fileNameXml = "data.xml"
 absoluteDirectoryJson = folderName + "/" + fileNameJson
 absoluteDirectoryXlsx = folderName + "/" + fileNameXlsx
