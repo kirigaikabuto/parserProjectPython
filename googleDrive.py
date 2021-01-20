@@ -17,7 +17,7 @@ drive = GoogleDrive(gauth)
 
 # replace the value of this variable
 # with the absolute path of the directory
-path = "./sanction/1.xlsx"
+path = "sanctions/1.xlsx"
 
 # iterating thought all the files/folder
 # of the desired directory
